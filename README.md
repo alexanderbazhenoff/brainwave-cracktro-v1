@@ -1,1 +1,1 @@
-# braimwave-cracktro-v1
+# brainwave-cracktro-v1
