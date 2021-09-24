@@ -47,6 +47,7 @@ Another side of this process is signing your work, a cracktro. Here is a place w
 
 - [speccywiki](http://speccy.info/Brainwave)
 - [wikipedia](https://ru.wikipedia.org/wiki/Brainwave_team)
+- [brainwave at pouet.net](https://www.pouet.net/groups.php?which=715)
 - [zxart.ee](https://zxart.ee/)
 - [cracktro v2 sources](https://github.com/alexanderbazhenoff/brainwave-cracktro-v2)
 
