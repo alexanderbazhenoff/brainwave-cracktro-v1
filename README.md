@@ -24,7 +24,7 @@ Here is a main templated sources and a version for Orbix. Probably other changes
 
 ## Story
 
-An oldschool and Commodore-64 style cracktro, but drawing the graphics on the screen border at ZX-Spectrum is not also so easy. Both scenes spend a lot of hours counting their CPU tacts and optimize their routines for the years.  If you don't know where the demoscene and into making comes from, please find the info first. 
+An oldschool and Commodore-64 style cracktro, but drawing the graphics on the screen border at ZX-Spectrum is not also so easy. Both scenes spend a lot of people-hours (years?) counting their CPU tacts and optimize their routines. If you don't know where the demoscene and into making comes from, please find the info first. 
 
 In the end of 90s I was inspired to made not also a crack intro, just would love to fix firm bugs, perfomance, add TR-DOS save/load, exam some history of game making and all these stuff. In those days cracking games on ZX-Spectrum mostly went to the past, but still here was some revers-research. And yes, Russian users had their specific disk systems, so you need to adapt them from time to time. If you look on ZX-Spectrum archive you'll find a various TR-DOS versions of the same game from different crack teams. The reason is only in making this better than another guys, as the scene tradition.
 
