@@ -8,10 +8,6 @@ ZX-Spectrum crack releases intro by alx^bw.
 
 [![Orbix the Terrorball crackro by alx youtube](https://img.youtube.com/vi/K8a_T3HDUjM/0.jpg)](https://www.youtube.com/watch?v=K8a_T3HDUjM "Orbix crackro by alx on youtube")
 
-[![Peter Pack Rat crackro by alx youtube](https://img.youtube.com/vi/N3lLnC3z4uA/0.jpg)](https://www.youtube.com/watch?v=N3lLnC3z4uA "Peter Pack Rat crackro by alx on youtube")
-
-[![Orbix the Terrorball crackro by alx youtube](https://img.youtube.com/vi/K8a_T3HDUjM/0.jpg)](https://www.youtube.com/watch?v=K8a_T3HDUjM "Xeno crackro by alx on youtube")
-
 ## TLDR
 
 This sources is a Zilog Z80 Assembler in Alasm format. You should import and compile this source in [Alasm](https://zxart.ee/rus/soft/tool/music/pro-tracker-alasm/qid:365628/) ZX-Spectrum assembler [(I have used v5.08)](https://speccy.info/ALASM) to compile. Or convert this source manually for [SjASMPlus](http://speccy.info/SjASMPlus) which is crossplatform.
