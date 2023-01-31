@@ -32,7 +32,7 @@ An oldschool and Commodore-64 style cracktro, but drawing the graphics on the sc
 so easy. Both scenes spend a lot of people-hours (years?) counting their CPU tacts and optimize their routines. If you
 don't know where the demoscene and into making comes from, please find the info first. 
 
-In the end of 90s I was inspired to made not also a crack intro, just would love to fix firm bugs, perfomance, add
+In the end of 90s I was inspired to made not also a crack intro, just would love to fix firm bugs, performance, add
 TR-DOS save/load, exam some history of game making and all these stuff. In those days cracking games on ZX-Spectrum
 mostly went to the past, but still here was some revers-research. And yes, Russian users had their specific disk 
 systems, so you need to adapt them from time to time. If you look on ZX-Spectrum archive you'll find a various TR-DOS
