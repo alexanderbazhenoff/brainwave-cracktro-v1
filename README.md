@@ -1,6 +1,6 @@
 # brainwave cracktro v1
 
-Sources of ZX-Spectrum crack releases intros coded by alx^bw.
+Sources of ZX-Spectrum crack releases intros coded by alx^brainwave.
 
 ## Youtube
 
@@ -13,7 +13,7 @@ Sources of ZX-Spectrum crack releases intros coded by alx^bw.
 This sources is a Zilog Z80 Assembler in Alasm format. You should import and compile this source in
 [Alasm](https://zxart.ee/rus/soft/tool/music/pro-tracker-alasm/qid:365628/) ZX-Spectrum assembler
 [(I have used v5.08)](https://speccy.info/ALASM) to compile. Or convert this source manually for 
-[SjASMPlus](http://speccy.info/SjASMPlus) which is crossplatform.
+[SjASMPlus](http://speccy.info/SjASMPlus) which is cross-platform.
 
 ## Technical info
 
@@ -50,18 +50,19 @@ multicolours, maths, vector graphics all at your 8-bit computer!
 
 ## Credits
 
-- [alx/brainwave](https://zxart.ee/rus/avtory/a/alx/qid:602008/): cracktro code, font and logo.
-- [mmcm/sage](https://zxart.ee/rus/avtory/m/mmcm/qid:602025/) or [megus/brainwave](https://zxart.ee/rus/avtory/m/megus/qid:602024/):
-cracktro music. Various versions of this cracktro contains different music.
+- [Alx/Brainwave](https://zxart.ee/rus/avtory/a/alx/qid:602008/): crack intro code, font and logo.
+- [Mmcm/Sage](https://zxart.ee/rus/avtory/m/mmcm/qid:602025/) or 
+[Megus/Brainwave](https://zxart.ee/rus/avtory/m/megus/qid:602024/): crack intro music (various versions of this crack
+intro contains different music).
 
 ## Related
 
-- [**Licence to kill crack intro on youtube**](https://www.youtube.com/watch?v=OU9Jh86ISqQ)
-- [**Stainless Steel crack intro on youtube**](https://www.youtube.com/watch?v=hqgBG23cQwE)
-- [**Orbix the Terrorball crack intro on youtube**](https://www.youtube.com/watch?v=K8a_T3HDUjM)
-- [**Peter Pack Rat crack intro on youtube**](https://www.youtube.com/watch?v=N3lLnC3z4uA)
-- [**Slightly Magic intro on youtube**](https://www.youtube.com/watch?v=OZDoOETyyX4)
-- [**Canyon Warrior intro on youtube**](https://www.youtube.com/watch?v=hWiqpjRIXos)
+- [**Licence to kill crack intro on YouTube**](https://www.youtube.com/watch?v=OU9Jh86ISqQ)
+- [**Stainless Steel crack intro on YouTube**](https://www.youtube.com/watch?v=hqgBG23cQwE)
+- [**Orbix the Terrorball crack intro on YouTube**](https://www.youtube.com/watch?v=K8a_T3HDUjM)
+- [**Peter Pack Rat crack intro on YouTube**](https://www.youtube.com/watch?v=N3lLnC3z4uA)
+- [**Slightly Magic intro on YouTube**](https://www.youtube.com/watch?v=OZDoOETyyX4)
+- [**Canyon Warrior intro on YouTube**](https://www.youtube.com/watch?v=hWiqpjRIXos)
 - [**Orbix crack intro on pouet.net**](https://www.pouet.net/prod.php?which=89862)
 - [**Licence To Kill Cractro on pouet.net**](https://www.pouet.net/prod.php?which=89863)
 
