@@ -1,3 +1,10 @@
+; OLDSTYLE CRACKTRO. CODED BY ALX/BW/XPJ
+
+; This Source Code Form is subject to the terms of the MIT
+; License. If a copy of the MPL was not distributed with
+; this file, You can obtain one at:
+; https://github.com/alexanderbazhenoff/brainwave-cracktro-v1
+
         ORG #6000
 
 
@@ -153,7 +160,7 @@ BEGIN   LD A,#3F
         LD HL,FONT-#200
         LD (23606),HL
         CALL 5633
-        EI 
+        EI
         LD A,32
         LD B,#60
 LOOP    PUSH AF
@@ -161,14 +168,14 @@ LOOP    PUSH AF
         POP AF
         INC A
         DJNZ LOOP
-        DI 
+        DI
         POP HL
         LD (23606),HL
         LD HL,TRAIN1Y
         LD DE,#4000
         LD C,8
-        LDIR 
-        EXX 
+        LDIR
+        EXX
         PUSH HL
         PUSH IX
         PUSH IY
@@ -180,17 +187,17 @@ LOOP    PUSH AF
         LD HL,MUSIC
         LD DE,MODULE
         LD BC,DPAGES-MUSIC
-        LDIR 
+        LDIR
         ;+--- REMOVIG LOADER ----+
         LD HL,LOADER
         LD DE,LOADADR
         LD BC,MUSIC-LOADER
-        LDIR 
+        LDIR
 
         LD HL,DPAGES
         LD DE,#C200
         LD BC,ENDOBJ-DPAGES
-        LDIR 
+        LDIR
 
         ;+---DECRUNCHING LOGO---+
         LD HL,D_LOGO
@@ -339,7 +346,7 @@ D_PRNYL LD (IX),L
         LD HL,LOGOATR
         LD DE,#20
         LD B,D
-        EXX 
+        EXX
         LD HL,LOGOPIX
         LD B,#6F
         PUSH HL
@@ -394,7 +401,7 @@ D_TOPL  LD (HL),#21
         LD DE,D_TAI
         LD HL,DATA1
         LD BC,7
-        LDIR 
+        LDIR
         EX DE,HL
         LD DE,OTXTADR
         LD B,112
@@ -417,7 +424,7 @@ D_TAIML LD (HL),1
         EX DE,HL
         LD HL,DATA2
         LD C,#4
-        LDIR 
+        LDIR
         ;+--ACTIVATING INTERRUPT--+
         LD HL,#D800
         LD DE,#D801
@@ -425,7 +432,7 @@ D_TAIML LD (HL),1
         LD A,H
         LD I,A
         LD (HL),#DF
-        LDIR 
+        LDIR
         LD A,#C3
         LD (#DFDF),A
         LD HL,INT1
@@ -439,29 +446,29 @@ D_TAIML LD (HL),1
         LD HL,#5000+#60
         CALL FF_LINE
         CALL compile
-        EI 
-        HALT 
+        EI
+        HALT
         LD A,1+2+4+8+16+32
         CALL FLASH
         LD HL,0
         LD D,H
         LD E,L
         LD BC,2900
-        LDIR 
+        LDIR
         LD HL,#5800
         LD DE,#5801
         LD C,#60
         LD (HL),BORDER*8+BORDER
-        LDIR 
+        LDIR
         LD C,#40
         LD (HL),BORDER*8+7
-        LDIR 
+        LDIR
         LD BC,#200-#40
         LD (HL),7
-        LDIR 
+        LDIR
         LD C,#A0
         LD (HL),BORDER*8+7
-        LDIR 
+        LDIR
         LD HL,INT2
         LD (#DFE0),HL
         ;--------------------
@@ -474,16 +481,16 @@ D_TAIML LD (HL),1
 AGAIN   CALL CLRTXTD
         CALL PRNTNXT
         CALL WAITKEY
-        HALT 
+        HALT
         CALL REST_C
-        HALT 
+        HALT
         CALL PG_UP
         CALL CLRTXTU
         CALL PRNTNXT
         CALL WAITKEY
-        HALT 
+        HALT
         CALL REST_C
-        HALT 
+        HALT
         CALL PG_DOWN
         JR AGAIN
 
@@ -506,9 +513,9 @@ CHEAT   LD BC,(CORD_P+1)
         LD (PAGE_P+1),HL
         LD (KUDA_P+1),BC
         CALL PRNTNXT
-        HALT 
+        HALT
         CALL REST_C
-        HALT 
+        HALT
         POP AF
         CP 0
         PUSH AF
@@ -520,16 +527,16 @@ KUDA_P  LD HL,#2121
         INC H
         LD L,72
         LD (KUDA_P2+1),HL
-KEYS    HALT 
+KEYS    HALT
         LD BC,#7FFE
         IN A,(C)
-        RRA 
+        RRA
         JP NC,EXIT
 KUDA_P2 LD DE,#1111
         LD HL,TABL_CH
         LD BC,#BFFE
         IN A,(C)
-        RRA 
+        RRA
         JP NC,CH_TALL
         LD B,#F7
         INC D
@@ -537,7 +544,7 @@ KUDA_P2 LD DE,#1111
         INC D
         INC D
         IN A,(C)
-        RRA 
+        RRA
         CALL NC,CH_TGLS    ;1
         JP KEYS
         ;+--- TOGLE ALL ('ENTER') ---+
@@ -548,7 +555,7 @@ CH_TALL LD B,1
         INC D
 CH_TAL1 PUSH BC
         CALL NC,CH_TGLA
-        HALT 
+        HALT
         INC D
         INC D
         INC HL
@@ -558,13 +565,13 @@ CH_TAL1 PUSH BC
         JP KEYS
 CH_TGLS CALL CH_TGLA
         CALL KB_WAIT
-        RET 
+        RET
 CH_TGLA PUSH AF
         PUSH BC
         PUSH DE
         PUSH HL
         LD A,(HL)
-        CPL 
+        CPL
         LD (HL),A
         OR A
         CALL Z,AD4000
@@ -582,23 +589,23 @@ CH_TGLA PUSH AF
         POP DE
         POP BC
         POP AF
-        RET 
+        RET
 TABL_CH DEFB #FF
-KB_WAIT HALT 
-        HALT 
-        HALT 
-        HALT 
-        HALT 
-        HALT 
-        HALT 
-        HALT 
-        HALT 
-        HALT 
-        RET 
+KB_WAIT HALT
+        HALT
+        HALT
+        HALT
+        HALT
+        HALT
+        HALT
+        HALT
+        HALT
+        HALT
+        RET
 AD4000  LD A,0
-        RET 
+        RET
 AD4004  LD A,4
-        RET 
+        RET
         ;-------------------- PRINT PAGES ROUTINES ----->>>>>
 PRNTNXT
 PAGE_P  LD HL,PAGE_L
@@ -644,11 +651,11 @@ NO_SPCE POP BC
         JR NZ,NO_ENDP
         LD HL,PAGE_L
 NO_ENDP LD (PAGE_P+1),HL
-        RET 
+        RET
         ;+---------------------------------+
         ;|          MAIN INT PP            |
         ;+---------------------------------+
-INT2    DI 
+INT2    DI
         PUSH AF
         PUSH BC
         PUSH DE
@@ -661,7 +668,7 @@ TOPEXIT LD SP,#3131
         LD D,H
         LD E,L
         LD BC,84
-        LDIR 
+        LDIR
         OR B
         OR B
         OR B
@@ -685,7 +692,7 @@ DJ_2U   DJNZ DJ_2U
         LD HL,0
         LD DE,0
         LD BC,11
-        LDIR 
+        LDIR
         ;+--- WHITE LINE ---+
         LD B,3
 DJ_1D   DJNZ DJ_1D
@@ -699,7 +706,7 @@ DJ_2D   DJNZ DJ_2D
         OUT (#FE),A
         PUSH IX
         PUSH IY
-        EXX 
+        EXX
         EX AF,AF'
         PUSH AF
         PUSH BC
@@ -726,7 +733,7 @@ LA_HL   LD HL,D_SINL+#FE
         POP DE
         POP BC
         POP AF
-        EXX 
+        EXX
         EX AF,AF'
         POP IY
         POP IX
@@ -734,8 +741,8 @@ LA_HL   LD HL,D_SINL+#FE
         POP DE
         POP BC
         POP AF
-        EI 
-INT1    RET 
+        EI
+INT1    RET
         ;~~~~~~~~~~~~~~~~ END INT...
 LA_HLI  INC HL
         INC HL
@@ -743,30 +750,30 @@ LA_HLI  INC HL
 LA_HLD  DEC HL
         DEC HL
 NA_HOOY LD (LA_HL+1),HL
-        RET 
+        RET
         ;+--------- WAIT KEY ----------+
 WAITKEY LD BC,1000
-WAIT_KL HALT 
+WAIT_KL HALT
         PUSH BC
         LD BC,#7FFE
         IN A,(C)
-        RRA 
+        RRA
         JR NC,SPCPRES
         LD B,#BF
         IN A,(C)
         POP BC
-        RRA 
+        RRA
         RET NC
         DEC BC
         LD A,B
         OR C
         JR NZ,WAIT_KL
-        RET 
+        RET
 SPCPRES POP BC
         POP DE
         JP CHEAT
         ;+--- PAGE DOWN... ---++++++++++++++++++++++++++++++++++
-PG_DOWN DI 
+PG_DOWN DI
         LD HL,(SAVE_JP+1)
         LD (HL),#31
 LAST_BD LD BC,#3F
@@ -787,20 +794,20 @@ PG_DNL  LD H,#DC                ;IMPORTANT!!!
         LD H,B
         LD L,C
         CALL TXTADR1
-        EI 
-        HALT 
+        EI
+        HALT
         POP BC
         DEC C
         JR NZ,PG_DNL
         LD A,B
         LD (LAST_BU+2),A
-        RET 
+        RET
         ;+----------- PAGE UP... -----------------------------+
-PG_UP   DI 
+PG_UP   DI
         LD HL,(SAVE_JP+1)
         LD (HL),#31
 LAST_BU LD BC,#F83F
-PG_UPL  DI 
+PG_UPL  DI
         LD HL,(SAVE_JP+1)
         LD (HL),#31
         LD H,#DC              ;IMPROTANT!!!!
@@ -819,16 +826,16 @@ PG_UPL  DI
         LD D,(HL)
         LD H,B
         LD L,C
-        DI 
+        DI
         CALL TXTADR1
-        EI 
-        HALT 
+        EI
+        HALT
         POP BC
         DEC C
         JR NZ,PG_UPL
         LD A,B
         LD (LAST_BD+2),A
-        RET 
+        RET
         ;+------ INSTALL TXT ADRS 4 TXT OUTPUT PP -------+
 TXTADRS LD HL,D_TOP+4816
         LD DE,D_TOP+9632
@@ -874,7 +881,7 @@ REAL_JP LD B,0
         ADD HL,BC
         POP BC
         DJNZ REST_L
-        RET 
+        RET
 
         ;+--- PRINT TEXT LINE ---+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 PRNTSTR LD A,(HL)
@@ -1040,9 +1047,9 @@ ENDPCHR POP BC
         POP HL
         INC HL
         JP PRNTSTR
-        RET 
+        RET
 ENDSTR1 INC HL
-        RET 
+        RET
 
 
         ;"""""""""" CLEAR SYMBOL """"""""""""""""
@@ -1167,7 +1174,7 @@ ENDCLR1 POP BC
         DEC D
         JP NZ,CCHR_L
         POP BC
-        RET 
+        RET
         ;+>>>>>>>>>>>>>>> CLER TEXT <<<<<<<<<<<<<<<<<+
 
 CLRTXTU LD HL,D_TOP
@@ -1239,7 +1246,7 @@ CLRTXTL INC HL
         INC HL
         INC HL
         DJNZ CLRTXTL
-        RET 
+        RET
 
 
 
@@ -1256,23 +1263,23 @@ FLASH   PUSH AF
         LD DE,#5801
         LD BC,#2FF
         LD (HL),A
-        LDIR 
-        RET 
+        LDIR
+        RET
 
 DATA1   LD (#BC56),SP
         LD HL,#2121
 DATA2   LD SP,#3131
-        RET 
+        RET
 
 D_LZ    LD D,H
         LD E,L
         INC DE
         LD BC,128
         LD (HL),B
-        LDIR 
-        RET 
+        LDIR
+        RET
 
-INSATR  EXX 
+INSATR  EXX
         PUSH HL
         CALL PUT4B
         POP HL
@@ -1282,7 +1289,7 @@ INSATR  EXX
         JR NZ,NO_ADD
         LD B,D
         ADD HL,DE
-NO_ADD  EXX 
+NO_ADD  EXX
         LD (IX),0       ;LD H,#26
         INC IX
         LD (IX),0
@@ -1291,7 +1298,7 @@ NO_ADD  EXX
         INC IX
         LD (IX),0
         INC IX
-        RET 
+        RET
 
 
 PUT4B   PUSH BC
@@ -1308,7 +1315,7 @@ PUT4B_L LD (IX),#E1     ;POP HL
         INC HL
         DJNZ PUT4B_L
         POP BC
-        RET 
+        RET
 
 DOWN_SL INC H
         LD A,H
@@ -1321,15 +1328,15 @@ DOWN_SL INC H
         LD A,H
         SUB #8
         LD H,A
-        RET 
+        RET
 
 FF_LINE LD D,H
         LD E,L
         INC DE
         LD (HL),#FF
         LD BC,#1F
-        LDIR 
-        RET 
+        LDIR
+        RET
 
 
 
@@ -1337,25 +1344,25 @@ FF_LINE LD D,H
 
 
 EXIT
-        DI 
+        DI
         LD HL,INT1
         LD (#DFE0),HL
-        EI 
-        HALT 
+        EI
+        HALT
         LD A,1+2+4+8+16+32
         CALL FLASH
 
         CALL stop
 
-        EI 
-        HALT 
+        EI
+        HALT
         LD BC,#1BFE
         LD HL,#5B00
         LD DE,#5AFF
         OUT (C),L
         LD (HL),L
-        LDDR 
-        DI 
+        LDDR
+        DI
         LD A,#3B
         LD I,A
         IM 1
@@ -1375,14 +1382,14 @@ STEKRET LD SP,#3131
         POP IY
         POP IX
         POP HL
-        EXX 
+        EXX
         LD HL,LOADADR
         PUSH HL
         LD HL,#6000
         LD DE,#6001
         LD BC,#9FFF
         LD (HL),L
-        EI 
+        EI
         JP #33C3
 
         DS #FF,#33
@@ -1419,7 +1426,7 @@ TP1     EQU $-1
         LD A,#FF
 
 NO_UN1  LD (#FFFF),A
-        EI 
+        EI
         RES 5,(IY+1)
 WAITL   BIT 5,(IY+1)
         JR Z,WAITL
@@ -1439,7 +1446,7 @@ LOAD1   PUSH HL
         LD A,(23823)
         OR A
         JR NZ,LOAD1
-        RET 
+        RET
 
 LL_3D13 LD (REG_A+1),A
         PUSH HL
@@ -1467,7 +1474,7 @@ ERR     LD HL,#2121
         LD (23613),A
         LD A,#C9
         LD (#5CC2),A
-        RET 
+        RET
 DRIA    EX (SP),HL
         PUSH AF
         LD A,H
@@ -1478,7 +1485,7 @@ DRIA    EX (SP),HL
         JR Z,NO_ERR
 NO_ERR  POP AF
         EX (SP),HL
-        RET 
+        RET
 RIA     POP HL
         POP HL
         POP HL
@@ -1490,7 +1497,7 @@ RIA     POP HL
         LD HL,#3F7E
         EX (SP),HL
         JP #3D2F
-        ENT 
+        ENT
 MUSIC   INCBIN "INTRO"
         DEFS 256,0
 DPAGES
@@ -1524,7 +1531,7 @@ PAGE6   DEFB "#09 CANYON WARRIOR.....MASTERTRONIC '88",#0D ;1
         DEFB "#11 ORBIX - THE TERRORBALL.............",#0D ;C
         DEFB "......................JOHN PRAGNELL '??",#0D ;D
         DEFB "            WAIT FOR OTHER COOL CRACKS!",#0D
-        ENT 
+        ENT
 ENDOBJ
         ORG #6000
 

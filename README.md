@@ -1,6 +1,6 @@
 # brainwave cracktro v1
 
-ZX-Spectrum crack releases intro by alx^bw.
+Sources of ZX-Spectrum crack releases intros coded by alx^bw.
 
 ## Youtube
 
@@ -30,7 +30,7 @@ Here is a main templated sources and a version for Orbix. Probably other changes
 
 An oldschool and Commodore-64 style cracktro, but drawing the graphics on the screen border at ZX-Spectrum is not also
 so easy. Both scenes spend a lot of people-hours (years?) counting their CPU tacts and optimize their routines. If you
-don't know where the demoscene and into making comes from, please find the info first. 
+don't know where the demo-scene and into making comes from, please find the info first. 
 
 In the end of 90s I was inspired to made not also a crack intro, just would love to fix firm bugs, performance, add
 TR-DOS save/load, exam some history of game making and all these stuff. In those days cracking games on ZX-Spectrum
@@ -45,25 +45,31 @@ why this game is so unfinished (because Martech freeze the development of 'War 1
 of these games is a very special huge topic.
 
 Another side of this process is signing your work, a cracktro. Here is a place where every team had their unique
-technique and algorythms to show that your computer can much more than you imagine before. Border and sync effects, 
+technique and algorithms to show that your computer can much more than you imagine before. Border and sync effects, 
 multicolours, maths, vector graphics all at your 8-bit computer!
+
+## Credits
+
+- [alx/brainwave](https://zxart.ee/rus/avtory/a/alx/qid:602008/): cracktro code, font and logo.
+- [mmcm/sage](https://zxart.ee/rus/avtory/m/mmcm/qid:602025/) or [megus/brainwave](https://zxart.ee/rus/avtory/m/megus/qid:602024/):
+cracktro music. Various versions of this cracktro contains different music.
 
 ## Related
 
-- [Licence to kill crack intro on youtube](https://www.youtube.com/watch?v=OU9Jh86ISqQ)
-- [Stainless Steel crack intro on youtube](https://www.youtube.com/watch?v=hqgBG23cQwE)
-- [Orbix the Terrorball crack intro on youtube](https://www.youtube.com/watch?v=K8a_T3HDUjM)
-- [Peter Pack Rat crack intro on youtube](https://www.youtube.com/watch?v=N3lLnC3z4uA)
-- [Slightly Magic intro on youtube](https://www.youtube.com/watch?v=OZDoOETyyX4)
-- [Canyon Warrior intro on youtube](https://www.youtube.com/watch?v=hWiqpjRIXos)
-- [Orbix crack intro on pouet.net](https://www.pouet.net/prod.php?which=89862)
-- [Licence To Kill Cractro on pouet.net](https://www.pouet.net/prod.php?which=89863)
+- [**Licence to kill crack intro on youtube**](https://www.youtube.com/watch?v=OU9Jh86ISqQ)
+- [**Stainless Steel crack intro on youtube**](https://www.youtube.com/watch?v=hqgBG23cQwE)
+- [**Orbix the Terrorball crack intro on youtube**](https://www.youtube.com/watch?v=K8a_T3HDUjM)
+- [**Peter Pack Rat crack intro on youtube**](https://www.youtube.com/watch?v=N3lLnC3z4uA)
+- [**Slightly Magic intro on youtube**](https://www.youtube.com/watch?v=OZDoOETyyX4)
+- [**Canyon Warrior intro on youtube**](https://www.youtube.com/watch?v=hWiqpjRIXos)
+- [**Orbix crack intro on pouet.net**](https://www.pouet.net/prod.php?which=89862)
+- [**Licence To Kill Cractro on pouet.net**](https://www.pouet.net/prod.php?which=89863)
 
 ## About
 
-- [speccywiki](http://speccy.info/Brainwave)
-- [wikipedia](https://ru.wikipedia.org/wiki/Brainwave_team)
-- [brainwave at pouet.net](https://www.pouet.net/groups.php?which=715)
-- [zxart.ee](https://zxart.ee/)
-- [cracktro v2 sources](https://github.com/alexanderbazhenoff/brainwave-cracktro-v2)
+- [**brainwave at speccywiki**](http://speccy.info/Brainwave)
+- [**brainwave at wikipedia**](https://ru.wikipedia.org/wiki/Brainwave_team)
+- [**brainwave at pouet.net**](https://www.pouet.net/groups.php?which=715)
+- [**zxart.ee**](https://zxart.ee/)
+- [**cracktro v2 sources**](https://github.com/alexanderbazhenoff/brainwave-cracktro-v2)
 
