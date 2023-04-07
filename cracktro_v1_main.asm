@@ -2,7 +2,7 @@
 ; |     OLDSTYLE CRACKTRO. CODED BY ALX/BW/XPJ ON 10.2000      |
 ; +------------------------------------------------------------+
 ; This Source Code Form is subject to the terms of the MIT
-; License. If a copy of the MPL was not distributed with
+; License. If a copy of the source was not distributed with
 ; this file, You can obtain one at:
 ; https://github.com/alexanderbazhenoff/brainwave-cracktro-v1
 
